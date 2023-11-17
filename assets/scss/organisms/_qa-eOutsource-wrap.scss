@@ -1,9 +1,20 @@
 .qa-eOutsource{
     padding: 60px 0;
+    position: relative;
+    overflow: hidden;
     &-bg{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
+    }
+    &__shadowBtm{
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50% , 0);
+        img{
+            width: 100%;
+        }
     }
     .oa-heading{
         margin-bottom: $spacer-6;
