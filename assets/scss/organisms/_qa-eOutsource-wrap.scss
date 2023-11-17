@@ -1,8 +1,9 @@
 .qa-eOutsource{
+    padding: 60px 0;
     &-bg{
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left top;
+        background-position: center top;
     }
     .oa-heading{
         margin-bottom: $spacer-6;
@@ -24,6 +25,7 @@
 }
 @include mobile{
     .qa-eOutsource{
+        padding: $spacer-5 0;
         &__wrap{
             flex-direction: column;
         }
