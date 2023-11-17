@@ -26,7 +26,7 @@
         color: #CC233D;
         font-size: 12px;
         display: flex;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     &__in-out {
@@ -37,6 +37,7 @@
         color: var(--btn-text);
         font-size: 12px;
         font-weight: 400;
+
         a {
             text-decoration: underline;
             color: var(--btn-text);
@@ -58,17 +59,17 @@
         .container {
             cursor: pointer;
             padding: 0;
-          }
-          
-          .container input {
+        }
+
+        .container input {
             display: none;
-          }
-          
-          .container svg {
+        }
+
+        .container svg {
             overflow: visible;
-          }
-          
-          .path {
+        }
+
+        .path {
             fill: none;
             stroke: white;
             stroke-width: 6;
@@ -77,18 +78,19 @@
             transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
             stroke-dasharray: 241 9999999;
             stroke-dashoffset: 0;
-          }
-          
-          .container input:checked ~ svg .path {
+        }
+
+        .container input:checked~svg .path {
             stroke-dasharray: 70.5096664428711 9999999;
             stroke-dashoffset: -262.2723388671875;
-          }
+        }
     }
 
     &__robo {
         width: 80%;
         height: auto;
         margin-bottom: $spacer-4;
+
         img {
             width: 100%;
             height: 100%;
