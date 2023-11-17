@@ -1,16 +1,22 @@
 .oa-heading {
     font-size: 38px;
-    font-weight: 500;
     line-height: 1.3;
-    color: var(--clr-blue-txt);
-    &--blk {
-        font-weight: 600;
-        color: var(--clr-black);
+    color: var(--clr-black);
+    font-weight: 600;
+
+    &--sub {
+        font-size: 34px;
+        color: var(--clr-blue-txt);
+        font-weight: 500;
     }
 }
 
 @include mobile {
     .oa-heading {
-        font-size: 22px;
+        font-size: 28px;
+
+        &--sub {
+            font-size: 24px;
+        }
     }
 }
