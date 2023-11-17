@@ -3,6 +3,9 @@
     padding: 8px 32px;
     border-radius: 40px;
     color: var(--btn-text);
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Lato;
     transition: 0.3s;
     position: relative;
     display: inline-flex;
@@ -43,6 +46,8 @@
         border: 1px solid var(--clr-blue-foot);
 
         &:hover {
+            color: var(--clr-blue-foot);
+
             .oa-btn::after {
                 background-color: var(--clr-white);
             }

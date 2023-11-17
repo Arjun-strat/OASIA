@@ -1,0 +1,38 @@
+.oa-success {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+
+    &__head {
+        margin-bottom: 24px;
+    }
+
+    &__tileout {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 -8px;
+    }
+
+    &__tile {
+        width: calc(33% - 16px);
+        margin: 0 8px;
+        padding: 16px;
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: var(--clr-white);
+
+        h4 {
+            text-align: center;
+            font-weight: 700;
+            text-align: center;
+        }
+
+    }
+
+    &__btnsec {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+    }
+}
