@@ -1,0 +1,111 @@
+.oa-footer {
+    background-color: var(--clr-blue-foot);
+    padding: $spacer-5 0;
+
+    &__outer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+        padding-bottom: $spacer-4;
+    }
+
+    &__inner {
+        width: calc(23% - 32px);
+        margin: 0 16px;
+        &--big {
+            width: calc(28% - 32px);
+            margin: 0 16px;
+        }
+    }
+
+    &__logo {
+        width: 150px;
+        height: auto;
+        margin-bottom: $spacer-4;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__heading {
+        color: var(--clr-white);
+        font-size: 17px;
+        font-weight: 400;
+        margin-bottom: $spacer-3;
+    }
+
+    &__service {
+        li,a {
+            color: var(--clr-white-lite);
+            font-size: 15px;
+            font-weight: 400;
+            padding-bottom: 4px;
+        }
+        &--small {
+            li,a {
+                font-size: 13px;
+                padding-bottom: 2px;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        &_icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 6px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__copy {
+        font-family: Lato;
+        color: var(--clr-white-lite);
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        padding: $spacer-4 0 0 0;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #F0F0F0;
+        }
+    }
+} 
+
+@include tablet {
+    .oa-footer {
+        &__inner {
+            width: calc(20% - 32px);
+            margin: 0 16px;
+            &--big {
+                width: calc(40% - 32px);
+                margin: 0 16px;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .oa-footer {
+        &__inner {
+            width: calc(100% - 32px);
+            margin: 0 16px;
+            padding-bottom: $spacer-4;
+            &--big {
+                width: calc(100% - 32px);
+                margin: 0 16px;
+            }
+        }
+    }
+}

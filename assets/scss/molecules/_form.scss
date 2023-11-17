@@ -1,0 +1,86 @@
+.oa-form {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: $spacer-5;
+
+    &__input {
+        width: 100%;
+        color: var(--form-text);
+        border-radius: 5px;
+        background-color: var(--clr-white);
+        padding: 10px $spacer-3;
+        margin-bottom: $spacer-3;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    &__check-out {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: $spacer-3 0;
+    }
+
+    &__text,a {
+        color: var(--btn-text);
+        font-size: 12px;
+        font-weight: 400;
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        margin-right: $spacer-2;
+        margin-top: -2px;
+
+        svg {
+            width: 15px;
+            height: 15px;
+        }
+
+        .container {
+            cursor: pointer;
+            padding: 0;
+          }
+          
+          .container input {
+            display: none;
+          }
+          
+          .container svg {
+            overflow: visible;
+          }
+          
+          .path {
+            fill: none;
+            stroke: white;
+            stroke-width: 6;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+            stroke-dasharray: 241 9999999;
+            stroke-dashoffset: 0;
+          }
+          
+          .container input:checked ~ svg .path {
+            stroke-dasharray: 70.5096664428711 9999999;
+            stroke-dashoffset: -262.2723388671875;
+          }
+    }
+
+    &__robo {
+        width: 80%;
+        height: auto;
+        margin-bottom: $spacer-4;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .oa-btn {
+        width: 100%;
+    }
+}
