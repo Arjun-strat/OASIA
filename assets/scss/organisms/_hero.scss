@@ -1,4 +1,5 @@
 .oa-hero {
+    position: relative;
    &__banner {
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +24,7 @@
    }
 
    &__form-out {
-    width: 35%;
+    width: 32%;
     margin: -40px $spacer-3 0 $spacer-3;
    }
 
@@ -42,21 +43,15 @@
     }
    }
 
-   &.modify {
-    .oa-hero__out {
-        justify-content: center;
-    }
-    .oa-hero__title {
-        width: 100%;
-    }
-    .oa-header__logo {
-        margin: 0 auto;
-        padding-bottom: $spacer-2;
-    }
-    .oa-hero__tnx-sub {
-        display: block;
-    }
-    
+   &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    z-index: 1;
    }
 }
 

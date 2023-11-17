@@ -1,12 +1,13 @@
 .oa-footer {
     background-color: var(--clr-blue-foot);
     padding: $spacer-5 0;
+    font-family: Lato;
 
     &__outer {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -16px;
-        padding-bottom: $spacer-4;
+        padding-bottom: $spacer-2;
     }
 
     &__inner {
@@ -56,15 +57,20 @@
             width: 30px;
             height: 30px;
             margin-right: 6px;
+            transition: 0.3s;
             img {
                 width: 100%;
                 height: 100%;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.3s;
             }
         }
     }
 
     &__copy {
-        font-family: Lato;
         color: var(--clr-white-lite);
         text-align: center;
         font-size: 15px;
