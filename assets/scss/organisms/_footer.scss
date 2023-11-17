@@ -37,16 +37,25 @@
     }
 
     &__service {
-        li,a {
+        li,a,p {
             color: var(--clr-white-lite);
             font-size: 15px;
             font-weight: 400;
             padding-bottom: 4px;
+            display: inline-block;
+        }
+        &--underline {
+            li,a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
         &--small {
-            li,a {
+            li,a,p {
                 font-size: 13px;
                 padding-bottom: 2px;
+                display: block;
             }
         }
     }

@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: repeat;
   padding: $spacer-6 $spacer-0;
-  margin: $spacer-4 $spacer-0;
+  // margin: $spacer-4 $spacer-0;
   &-tiles {
     width: 100%;
   }
@@ -16,7 +16,8 @@
     width: 100%;
     height: 51px;
     left: 0;
-    top: -51px;
+    // top: -51px;
+    top: -47px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1375' height='51' viewBox='0 0 1375 51' fill='none'%3E%3Cpath opacity='0.6' d='M687.01 51C1066.44 51 1374.02 39.5832 1374.02 25.5C1374.02 11.4168 1066.44 0 687.01 0C307.585 0 0 11.4168 0 25.5C0 39.5832 307.585 51 687.01 51Z' fill='url(%23paint0_radial_68_417)'/%3E%3Cdefs%3E%3CradialGradient id='paint0_radial_68_417' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(686.553 46.4913) scale(686.996 25.8276)'%3E%3Cstop stop-opacity='0.39'/%3E%3Cstop offset='1' stop-color='white' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
     background-position: center;
     background-size: cover;
@@ -29,7 +30,8 @@
     width: 100%;
     height: 51px;
     left: 0;
-    bottom: -51px;
+    // bottom: -51px;
+    bottom: -47px;;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1375' height='51' viewBox='0 0 1375 51' fill='none'%3E%3Cpath opacity='0.6' d='M687.01 4.06361e-05C307.585 1.8836e-05 5.26536e-06 11.4167 3.39201e-06 25.5C1.51866e-06 39.5832 307.585 50.9999 687.01 51C1066.44 51 1374.02 39.5833 1374.02 25.5C1374.02 11.4168 1066.44 6.24362e-05 687.01 4.06361e-05Z' fill='url(%23paint0_radial_68_419)'/%3E%3Cdefs%3E%3CradialGradient id='paint0_radial_68_419' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(687.467 4.50874) rotate(-180) scale(686.996 25.8276)'%3E%3Cstop stop-opacity='0.39'/%3E%3Cstop offset='1' stop-color='white' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
     background-position: center;
     background-size: cover;

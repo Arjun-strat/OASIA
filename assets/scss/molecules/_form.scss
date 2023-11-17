@@ -9,9 +9,9 @@
         border-radius: 5px;
         background-color: var(--clr-white);
         padding: 10px $spacer-3;
-        margin-bottom: $spacer-3;
         height: 40px;
         font-size: 12px;
+        border: 0;
     }
 
     &__check-out {
@@ -21,12 +21,27 @@
         margin: $spacer-3 0;
     }
 
-    &__text,a {
+    &__valid {
+        margin-top: 6px;
+        color: #CC233D;
+        font-size: 12px;
+        display: flex;
+        font-weight: 400;
+    }
+
+    &__in-out {
+        margin-bottom: $spacer-3;
+    }
+
+    &__text {
         color: var(--btn-text);
         font-size: 12px;
         font-weight: 400;
         a {
             text-decoration: underline;
+            color: var(--btn-text);
+            font-size: 12px;
+            font-weight: 400;
         }
     }
 
