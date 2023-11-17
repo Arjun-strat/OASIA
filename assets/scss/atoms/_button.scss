@@ -1,0 +1,51 @@
+.oa-btn {
+    background-color: var(--clr-blue-txt);
+    padding: 8px 32px;
+    border-radius: 40px;
+    color: var(--btn-text);
+    transition: 0.3s;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid var(--clr-blue-txt);
+    overflow: hidden;
+
+    span {
+        position: relative;
+        z-index: 9;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        left: -100%;
+        top: 0;
+        background-color: var(--clr-white);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        color: var(--clr-blue-txt);
+        transition: 0.3s;
+
+        &::after {
+            left: 0;
+            transition: 0.3s;
+        }
+    }
+
+    // 
+    &--dark {
+        background-color: var(--clr-blue-foot);
+        border: 1px solid var(--clr-blue-foot);
+
+        &:hover {
+            .oa-btn::after {
+                background-color: var(--clr-white);
+            }
+        }
+    }
+}
