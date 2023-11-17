@@ -1,7 +1,20 @@
 .qa-eOutsource{
     &__tile{
-        border: 5px solid var(clr-blue-txt);
+        border: 1px solid var(--clr-blue-txt);
         padding: 20px;
-        background-color: var(clr-blue-txt);
+        border-radius: 10px;
+        &-icn{
+            margin-bottom: $spacer-3;
+        }
+        &-head{
+            font-size: 20px;
+            font-weight: $font-bold;
+            margin-bottom: $spacer-3;
+            color: var(--clr-gry);
+        }
+        &-body{
+            font-size: 16px;
+            color: var(--clr-gry-light);
+        }
     }
 }
