@@ -29,10 +29,18 @@
     }
 }
 
+@include tablet {
+    .oa-partners {
+        &__img {
+            width: calc(50% - 32px);
+        }
+    }
+}
+
 @include mobile {
     .oa-partners {
         &__img {
-            width: calc(33.3% - 32px);
+            width: calc(100% - 32px);
         }
     }
 }

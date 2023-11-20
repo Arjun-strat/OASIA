@@ -102,3 +102,12 @@
         font-size: 16px;
     }
 }
+
+@include mobile-tablet {
+    .oa-form {
+        .oa-btn {
+            font-size: 14px;
+        }
+               
+    }
+}
