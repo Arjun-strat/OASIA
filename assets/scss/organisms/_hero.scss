@@ -1,5 +1,5 @@
 .oa-hero {
-    position: relative;
+   position: relative;
    &__banner {
     background-position: center;
     background-repeat: no-repeat;
@@ -7,6 +7,32 @@
     width: 100%;
     height: auto;
     padding: $spacer-4 0;
+   }
+
+   &--tnq {
+    .oa-header__logo {
+        margin: 0 auto;
+    }
+    .oa-hero__title {
+        width: 90%;
+    }
+    .tnq-head {
+        color: var(--clr-black);
+        font-size: 30px;
+        font-weight: 600;
+        margin: $spacer-3 0;
+        text-align: center;
+    }
+    .oa-hero__heading {
+        text-align: center;
+    }
+    .oa-hero__banner {
+        padding: $spacer-6 0;
+    }
+    .oa-hero__out {
+        justify-content: center;
+    }
+
    }
 
    &__out {
@@ -75,6 +101,11 @@
                 font-size: 28px;
             }
            }
+           &--tnq {
+            .oa-hero__title {
+                width: 100%;
+            }
+           }
     }
 }
 
@@ -96,6 +127,19 @@
             font-size: 32px;
             &--sub {
                 font-size: 26px;
+            }
+           }
+
+           &--tnq {
+            .tnq-head {
+                color: var(--clr-black);
+                font-size: 24px;
+                font-weight: 600;
+                margin: $spacer-3 0;
+                text-align: center;
+            }
+            .oa-hero__title {
+                width: 100%;
             }
            }
     }
